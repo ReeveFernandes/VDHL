@@ -1,0 +1,83 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww15180\viewh18420\viewkind1
+\deftab720
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\ri0\partightenfactor0
+
+\f0\b\fs24 \cf0 \expnd0\expndtw0\kerning0
+This is folder from my computer used for maintaining projects.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\ri0\partightenfactor0
+
+\f1\b0 \cf0 \
+This Directory:\
+VHDL - 1 : collection of VHDL/Verilog Projects on the OMDAZ board (Board 1)/ MKR VIDOR 4000 board (board 2)\
+\
+Inner directories:\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\ri0\partightenfactor0
+
+\f0\b \cf0 CodeTestsVGA
+\f1\b0  - This directory contains Quartz\'92s Prime 21.1 quarts file that can be run on that software to run VGA program. This program is not tested for accuracy. This module was downloaded when we were checking out methods to display on a screen using the FPGA. Since VGA is widely available and my board had a VGA slot, I downloaded this module to test it out. \
+\
+
+\f0\b Display
+\f1\b0  - This directly contains contains Quartus Prime 21.2 project to run the 7-segment display on OMDAZZ Development board. I display a time count up as we click on the button. There is also another code project in this directory that changes the intensity of the display by reducing the number of flashes per second. The second code base is not tested for accuracy.This project was created as a learning project to understand how to work on the OMDAZZ (board 1).\
+\
+
+\f0\b Intensity
+\f1\b0  - This is same project as above but separates as its own project. This project was an extra challenge to add to the above project by trying to dim the brightness/intensity of the display by reducing the frequency of flashes.\
+\
+
+\f0\b IPs
+\f1\b0  - These are third parties IPs for I2c, and terasic camera module set up. Only downloaded for reference, have not been used anywhere. Do not bother this directory unless you want to learn more about the IPs in the directory\
+\
+
+\f0\b Lcd1602
+\f1\b0  - whole file downloaded as is from https://github.com/jvitkauskas/Altera-Cyclone-IV-board-V3.0/tree/master/Example%20code/Peripheral%20control%2010%20LCD1602/lcd1602\
+This is NOT an LCD TFT screen driver. Used for testing the board. Did not see promising results. Downloaded just to test things \
+\
+
+\f0\b LCDdriver
+\f1\b0  - Code written from the course and tried to adapt to the new board. Conatins reset module and SPI driver. Reset module is tested and working, however, certain changes have to be made in the signaling before using it on the FPGA.\
+\
+
+\f0\b led_twinkle
+\f1\b0  - code to make the on-board leds twinkle. Downloaded directly from https://github.com/jvitkauskas/Altera-Cyclone-IV-board-V3.0/tree/master/Example%20code/Peripheral%20control%2002%20Control%204%20LED%20bright%20out/led_twinkle\
+Not tested accuracy.\
+\
+
+\f0\b Notes
+\f1\b0  - notes taken from VERILOG course used to study yo verily to program a FPGA
+\f0\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\ri0\partightenfactor0
+
+\f1\b0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\ri0\partightenfactor0
+
+\f0\b \cf0 Peripheral control 01 light 4 led
+\f1\b0  - Code from https://github.com/jvitkauskas/Altera-Cyclone-IV-board-V3.0/tree/master/Example%20code/Peripheral%20control%2001%20light%204%20LED/led\
+Not tested for accuracy. Runs fine.\
+\
+
+\f0\b Ppl
+\f1\b0  - phased locked loop IPs. Downloaded only as a requirement for other modules examples\
+\
+
+\f0\b ShiftRegisters
+\f1\b0  - demonstrating shifting register on button click using leds and then routing them back to original state. Learned for Verilog course and implemented. This is done on the MKR VIDOR 4000\
+\
+
+\f0\b StateMachine
+\f1\b0  - Demonstration of state machine using LEDs on MKR VIDOR, using change in leds to demonstrate different states.\
+\
+
+\f0\b SwitchDriveLED
+\f1\b0  - demonstration of switching attached leds using switches\
+\
+
+\f0\b TFT
+\f1\b0  - TFT driver for putting on image on the screen modules of OMDAZZ, attempt using the the documentations for it. Not completed.\
+}

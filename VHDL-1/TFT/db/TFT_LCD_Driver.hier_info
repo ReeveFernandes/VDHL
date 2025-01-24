@@ -1,0 +1,60 @@
+|TFT_LCD_Driver_tb
+
+
+|TFT_LCD_Driver_tb|TFT_LCD_Driver:tft
+clk => bit_id[0].CLK
+clk => bit_id[1].CLK
+clk => bit_id[2].CLK
+clk => lcd_sda_o~reg0.CLK
+clk => lcd_cs_o~reg0.CLK
+clk => end_done.CLK
+clk => wr_done.CLK
+clk => str_done.CLK
+clk => lcd_scl_o~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => wr_flow_ctrl~9.DATAIN
+clk => start_flow_ctrl~9.DATAIN
+clk => cur_state~1.DATAIN
+rst_n => bit_id[0].PRESET
+rst_n => bit_id[1].PRESET
+rst_n => bit_id[2].PRESET
+rst_n => lcd_sda_o~reg0.ACLR
+rst_n => lcd_cs_o~reg0.PRESET
+rst_n => end_done.ACLR
+rst_n => wr_done.ACLR
+rst_n => str_done.ACLR
+rst_n => lcd_scl_o~reg0.ACLR
+rst_n => cnt[0].ACLR
+rst_n => cnt[1].ACLR
+rst_n => cnt[2].ACLR
+rst_n => cnt[3].ACLR
+rst_n => wr_flow_ctrl~11.DATAIN
+rst_n => start_flow_ctrl~11.DATAIN
+rst_n => cur_state~3.DATAIN
+en_i => Selector1.IN3
+en_i => Selector0.IN1
+data_i[0] => Mux0.IN7
+data_i[1] => Mux0.IN6
+data_i[2] => Mux0.IN5
+data_i[3] => Mux0.IN4
+data_i[4] => Mux0.IN3
+data_i[5] => Mux0.IN2
+data_i[6] => Mux0.IN1
+data_i[7] => Mux0.IN0
+stop_flag => wr_flow_ctrl.OUTPUTSELECT
+stop_flag => wr_flow_ctrl.OUTPUTSELECT
+stop_flag => wr_flow_ctrl.OUTPUTSELECT
+stop_flag => wr_flow_ctrl.OUTPUTSELECT
+stop_flag => wr_flow_ctrl.OUTPUTSELECT
+stop_flag => wr_flow_ctrl.OUTPUTSELECT
+stop_flag => wr_flow_ctrl.OUTPUTSELECT
+stop_flag => wr_flow_ctrl.OUTPUTSELECT
+stop_flag => wr_done.DATAB
+lcd_cs_o <= lcd_cs_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_scl_o <= lcd_scl_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_sda_o <= lcd_sda_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

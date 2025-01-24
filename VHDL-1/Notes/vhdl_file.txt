@@ -1,0 +1,34 @@
+entity block
+entity name and port declaration
+
+architecture block
+signal circuit declaration
+concurrent VHDL statements
+Process blocks (as many)
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MyEntity is
+
+	port(
+		A: in std_logic;
+		B: in std_logic;
+		C: in std_logic;
+		Y: out std_logic;
+);
+
+
+end entity;
+
+architecture MyArchietecture of myEntity is 
+	signal D: std_logic
+
+begin
+
+	D <= A and B;
+	Y <= C or D;
+ 
+end architecture;

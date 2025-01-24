@@ -1,0 +1,13 @@
+
+State Machine - |spi_driver|flow_ctrl
+Name flow_ctrl.0011 flow_ctrl.0010 flow_ctrl.0001 flow_ctrl.0000 
+flow_ctrl.0000 0 0 0 0 
+flow_ctrl.0001 0 0 1 1 
+flow_ctrl.0010 0 1 0 1 
+flow_ctrl.0011 1 0 0 1 
+
+State Machine - |spi_driver|cur_state
+Name cur_state.DONE cur_state.LCD_WR cur_state.IDLE 
+cur_state.IDLE 0 0 0 
+cur_state.LCD_WR 0 1 1 
+cur_state.DONE 1 0 1 

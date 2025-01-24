@@ -1,0 +1,39 @@
+Thu Oct 20 16:58:04 EDT 2022
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.cursor,name.frame_1.tool0"
+    while executing
+"$winName.grid.cursor,name.frame_1.tool0 configure -selectcolor $PrefWave(background)"
+    (procedure "Wave::SetBackground" line 15)
+    invoked from within
+"Wave::SetBackground .main_pane.wave.interior.cs.body.pw.wf"
+    ("eval" body line 1)
+    invoked from within
+"eval $cmd $w"
+    (procedure "foreachWaveWindow" line 5)
+    invoked from within
+"foreachWaveWindow Wave::SetBackground"
+    (procedure "Transcript::tracePrefWave" line 14)
+    invoked from within
+"Transcript::tracePrefWave ::PrefWave background w"
+    (write trace on "::PrefWave(background)")
+    invoked from within
+"set ::PrefWave(background) {Dark Slate Gray}"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 $cmd"
+    (procedure "WindowPref::ApplyWindowPrefs" line 25)
+    invoked from within
+"WindowPref::ApplyWindowPrefs"
+    (procedure "Property::apply" line 4)
+    invoked from within
+"Property::apply .preferences.nb"
+    invoked from within
+".preferences.b.button1 invoke"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke]"
+    (procedure "tk::ButtonUp" line 24)
+    invoked from within
+"tk::ButtonUp .preferences.b.button1"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/21.1/questa_fse/win64/tk8.6/bgerror.tcl:106: ::tkerror {can't set "::PrefWave(background)": invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.cursor,name.frame_1.tool0"}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't set "::PrefWave(background)": invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.cursor,name.frame_1.tool0"}

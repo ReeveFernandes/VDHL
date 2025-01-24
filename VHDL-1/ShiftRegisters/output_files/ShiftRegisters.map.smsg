@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at ShiftRegisters.sv(25): always construct contains both blocking and non-blocking assignments File: C:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV/ShiftRegisters.sv Line: 25

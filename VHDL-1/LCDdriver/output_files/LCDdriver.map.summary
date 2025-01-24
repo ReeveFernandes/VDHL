@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Apr 27 16:57:33 2023
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Revision Name : LCDdriver
+Top-level Entity Name : spi_driver
+Family : Cyclone IV E
+Total logic elements : 29
+    Total combinational functions : 29
+    Dedicated logic registers : 14
+Total registers : 14
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

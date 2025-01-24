@@ -1,0 +1,20 @@
+to use declare std_Logic_1164 lib
+
+c <+ A and B;	// all singals std_logic type
+Z <+ X xor Y;	// all singlas Boolean type
+
+if sig 1 = "1101" or sig 2 = true then
+// if block here
+end if
+
+vector booelean happen elemenet wise.
+
+shift left logic
+shift right logic
+the above two only shifts bits to left or right accordingly
+
+Rotate // rotate operatde from one end and shoves to the other end
+
+arthimatic operators need numeric_std;
+
+concatenation // merges buses

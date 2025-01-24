@@ -1,0 +1,59 @@
+entity Entity A is 
+port
+(
+A : in	integer range 0 to 255;
+B : in	integer range 0 to 255;
+C : out	integer range 0 to 511
+);
+end entity;
+
+archietecture trl of EntityA is 
+begin 
+	C <= A +B
+end rtl
+
+
+entity toeplevel is
+port
+(
+x : in integer 0 to 255;
+Y: out integer range 0 to 255;
+);
+end entity;
+
+archieture rtl of toplevel is
+
+	signal s1, s2,s4,s5: integer range 0 to 255;
+	signal s3, s6 : integer range 0 to 511;
+
+	component Entity A is
+	port 
+	(
+		A : in	integer range 0 to 255;
+		B : in	integer range 0 to 255;
+		C : out	integer range 0 to 511
+
+
+	);
+	end component;
+
+	begin
+
+		instance1: EntityA
+		port map
+		(
+			A => s1,
+			B => s2,
+			c => s3
+
+		);
+
+		instance2: EntityA
+		port map
+		(
+			A => s4,
+			B => s5,
+			c => s6
+
+		);
+end architecture 

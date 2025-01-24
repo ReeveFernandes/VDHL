@@ -1,0 +1,10 @@
+//synchronizer
+
+
+module sync (
+
+	input		logic	insig;
+	output	logic	outsig;
+
+
+);

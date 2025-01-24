@@ -1,0 +1,88 @@
+data types - std_logic
+
+uses package std_logic_1164
+
+values:
+1/0
+z - tri state : but only for i/o pins because only they have tri-state buffers
+H/L - weak high or low
+W - Weak unknown
+U- Un intialised
+X - Unknown and cannot be determined
+-  - Dont care
+
+Note: last 5 only for simulation. Synthesizable only 1/0/z.
+
+
+
+Package Std_Logic_1164 Std_Logic_vector
+similar to array
+adresd/ counter as examples
+
+There are different array attributes
+signal A:std_logic_vertoy(7 downto 0);
+A'left 7
+A'right 0
+A'length 8
+A'range 7 downto 0
+
+Signed and unsigned types
+package- numeric_std
+singal A: unsigned(7 downto 0)
+signal B : signed(7 downto 0) := x"A1";
+Must be same type and size
+
+integer type
+reps intergers
+built in
+covers from +-2^31 
+always declare range while assignig 
+signal A: integer range -128 to 127 := 35;
+
+Boolean
+in built 
+signal A: Boolean;
+signal B : boolean := true;
+
+Enumerate
+create own data type
+VHDL declaration    type TrafficLight is (red, amber, green);
+signal decleation   signal my_signal : TrafficLight;
+assignment          my_signal <=red;
+Decalre new type	type SMType is (IDLE, DO_WORK, ASSERT_DONE);
+declare signal		singal SMState: SMType;
+assignment		SMState <=IDLE; SMState <= DO_WORK;
+enumerate need 2 bit values to make states: 00,01,10,11 
+
+Array:
+collection of same type signals
+type myArrayType is array (0 to 3) of interger;	// std_logic_vector is an array of std_logic elemets
+signal myArray: myArrayType
+myArray() <= 0;
+
+unconstrained Array Type
+Does not specify the number
+type ABC is array (integer range <>) of interger;
+signal Sig1 : ABC(0 to 7);
+signal Sig2: ABC(1:16);
+
+Subtypes
+subtype NATURAL is INTEGER range 0 to INTEGER'HIGH;
+signal NaturalSignal : natural;
+subtype unit8_t is INTEGER range 0 to 255;
+signal RxChar : unit8_t;
+
+
+writing signal for record:
+
+type MyRamType is record
+  signal 	WriteData	:std_logiv_vector(15 downto 0);
+  signal 	ReadData	:std_logiv_vector(15 downto 0);
+  signal	WriteAddr	:std_logic_vector(15 downto 0);
+  signal	ReadAddr	:std_logic_vector(15 downto 0);
+  signal	WriteEnable	:std_logic
+end record;
+
+signal RAM_IO: MyRAMTYpe;
+RAM_IO.WriteData <= x"8000";
+ 

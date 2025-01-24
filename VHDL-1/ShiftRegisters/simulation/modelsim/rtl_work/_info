@@ -1,0 +1,74 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/simulation/modelsim
+T_opt
+!s110 1667936238
+VzLz5iLXI3fnZfPHhF@37?2
+04 17 4 work ShiftRegisters_tb fast 0
+=1-54ee75d8a232-636aafee-50-18f8
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vShiftRegisters
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1667936236
+!i10b 1
+!s100 :LAHVMMGMQ2PYSDBEMS@>1
+Id1Ud3ah1Kkj8a39zYj`@P3
+S1
+R0
+w1667936046
+8C:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV/ShiftRegisters.sv
+FC:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV/ShiftRegisters.sv
+!i122 0
+L0 3 37
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1667936236.000000
+!s107 C:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV/ShiftRegisters.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV|C:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV/ShiftRegisters.sv|
+!i113 0
+Z5 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 -sv -work work {+incdir+C:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@shift@registers
+vShiftRegisters_tb
+R2
+!s110 1667936237
+!i10b 1
+!s100 N[9ieKzA3LR>XiYD7^bgO3
+I0[OiYkoQLO0_KP<QBQki00
+S1
+R0
+w1667507852
+8C:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV/ShiftRegisters_tb.sv
+FC:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV/ShiftRegisters_tb.sv
+!i122 1
+L0 5 21
+R3
+R4
+r1
+!s85 0
+31
+!s108 1667936237.000000
+!s107 C:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV/ShiftRegisters_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV|C:/Users/prins/Desktop/GENISAMA/VHDL Course/ShiftRegisters/src/SV/ShiftRegisters_tb.sv|
+!i113 0
+R5
+R6
+R1
+n@shift@registers_tb

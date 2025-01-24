@@ -1,0 +1,36 @@
+// TFT_LCD_Driver_tb
+`timescale 1ns/1ps
+
+module TFT_LCD_Driver_tb;
+
+	reg clock;
+	reg chipSelect;
+	
+	
+	wire CS;
+	wire CLK;
+	wire SDI;
+	
+	reg SDO;
+
+	always #10 clock = ~clock;
+	
+	TFT_LCD_Driver(
+	.clock(clock),
+	.chipSelect(chipSelect),
+	.CS(CS),
+	.CLK(CLK),
+	.SDI(SDI),
+	.SDO(SDO)
+	);
+	
+	initial begin
+	
+		clock <= 0;
+		chipSelect <= 0;
+	end
+	
+endmodule;
+	
+	
+

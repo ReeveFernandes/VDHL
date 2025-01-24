@@ -1,0 +1,5 @@
+constant name : type := intial_value;
+
+MySignal <= MyConstant;
+
+initialised when declared and cannot be changed

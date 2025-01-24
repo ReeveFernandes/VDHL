@@ -1,0 +1,41 @@
+Syntax:
+
+process_name : process (sensitivity_list)
+	
+	-- Declarative Section   		//list of signals // only simulation
+						// waits for any of the siganals above to change
+begin
+
+	--Body Section
+
+end process;
+
+
+
+Example:
+
+
+TestProcess1: process (Sig1)
+begin
+	sig2 <= sig1;
+end process;
+
+AND_GATE : process(A,B)
+begin
+	C <= A and B;
+end process;
+
+
+Registered prcoess: // must have clk signal and reag the edges of the singal. Better to have reset
+
+
+TestPricess : process(rst, Clk)
+begin
+	if Rst = '1' then
+		Q <='0'
+	elif rising_edge(clk) then
+		q <= D;
+	end if
+end process;
+
+
